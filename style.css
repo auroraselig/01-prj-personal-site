@@ -1,1 +1,42 @@
 /* Add you CSS here */
+
+/* Set a background color for the whole page */
+body {
+  background-color: #f0f0f0; /* light gray */
+  font-family: Arial, sans-serif; /* easy-to-read font */
+  margin: 0; /* remove default margin */
+  padding: 0; /* remove default padding */
+}
+
+/* Style the header */
+header {
+  background-color: #4CAF50; /* green */
+  color: white; /* white text */
+  padding: 20px; /* space inside the header */
+  text-align: center; /* center the text */
+  /* Add a book image to the background */
+  background-image: url('https://img.freepik.com/free-photo/book-composition-with-open-book_23-2147690555.jpg?semt=ais_hybrid&w=740');
+  background-repeat: no-repeat; /* do not repeat the image */
+  background-position: right center; /* position image on the right */
+  background-size: 80px 80px; /* set image size */
+  background-attachment: fixed; /* makes the image stay in place for a simple parallax effect */
+}
+
+/* Add some space around each section */
+section {
+  background-color: white; /* white background for sections */
+  margin: 20px; /* space outside the section */
+  padding: 15px; /* space inside the section */
+  border-radius: 8px; /* rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+/* Style the section headings */
+section h2 {
+  color: #4CAF50; /* green color for headings */
+}
+
+/* Style the lists */
+ul {
+  padding-left: 20px; /* indent the list */
+}

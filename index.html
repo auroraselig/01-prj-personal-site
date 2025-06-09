@@ -6,45 +6,54 @@
   <!-- Link to your CSS file -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="parallax">
   <!-- Website Header -->
-  <header>
+  <header class="parallax">
     <!-- The header has a background image of a book, set in CSS -->
     <h1>Aurora Selig</h1>
     <p>Welcome to my personal website!</p>
   </header>
 
+  <!-- Add this blank section between the header and the rest of the content -->
+  <div class="blank-space"></div>
+
   <!-- Bio Section -->
   <section id="bio">
     <h2>About Me</h2>
-    <p>
+    <div class="bio-box">
       <!-- Write a short bio about yourself here -->
-      Hi! I'm Aurora Selig. I am a psychology major who enjoys reading and learning new things. I also love coding and exploring how technology can help people.
-    </p>
+      <p>
+        Hi! I'm Aurora Selig. I am a psychology major who enjoys reading and learning new things. I also love coding and exploring how technology can help people.
+      </p>
+    </div>
   </section>
 
   <!-- Skills Section -->
   <section id="skills">
     <h2>My Skills</h2>
-    <ul>
+    <div class="skills-box">
       <!-- List your skills here -->
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript (beginner)</li>
-      <li>Python</li>
-      <li>Java (beginner)</li>
-    </ul>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript (beginner)</li>
+        <li>Python</li>
+        <li>Java (beginner)</li>
+      </ul>
+    </div>
   </section>
 
   <!-- Interests Section -->
   <section id="interests">
     <h2>My Interests</h2>
-    <ul>
+    <div class="interests-box">
       <!-- List your interests here -->
-      <li>Coding</li>
-      <li>Reading</li>
-      <li>Listening to Music</li>
-    </ul>
+      <ul>
+        <li>Coding</li>
+        <li>Reading</li>
+        <li>Listening to Music</li>
+      </ul>
+    </div>
   </section>
 </body>
 </html>

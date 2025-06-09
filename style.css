@@ -8,17 +8,29 @@ body {
   padding: 0; /* remove default padding */
 }
 
+/* Add a parallax effect to the body when the "parallax" class is used */
+body.parallax {
+  /* The background image stays fixed when you scroll, creating a simple parallax effect */
+  background-image: url('https://images.unsplash.com/photo-1614624532983-4ce03382d63d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGVza3RvcCUyMGNvbXB1dGVyfGVufDB8fDB8fHww'); /* book image */
+  background-repeat: no-repeat; /* do not repeat the image */
+  background-position: center top; /* position image at the top center */
+  background-size: cover; /* make the image cover the whole background */
+  background-attachment: fixed; /* parallax effect */
+}
+
 /* Style the header */
 header {
   background-color: #4CAF50; /* green */
   color: white; /* white text */
   padding: 20px; /* space inside the header */
   text-align: center; /* center the text */
-  /* Add a book image to the background */
+}
+
+header.parallax {
   background-image: url('https://img.freepik.com/free-photo/book-composition-with-open-book_23-2147690555.jpg?semt=ais_hybrid&w=740');
   background-repeat: no-repeat; /* do not repeat the image */
   background-position: right center; /* position image on the right */
-  background-size: 80px 80px; /* set image size */
+  background-size: cover; /* set image size */
   background-attachment: fixed; /* makes the image stay in place for a simple parallax effect */
 }
 
@@ -39,4 +51,57 @@ section h2 {
 /* Style the lists */
 ul {
   padding-left: 20px; /* indent the list */
+}
+
+/* Add a blank white section between the header and the rest of the page */
+.blank-space {
+  background-color: white; /* white background */
+  height: 40px;            /* height of the blank space */
+  width: 100%;             /* make it stretch across the page */
+}
+
+/* Style the bio section for a more visually appealing look with a parallax background */
+#bio .bio-box {
+  background-image: url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80'); /* book/reading themed image */
+  background-repeat: no-repeat; /* do not repeat the image */
+  background-size: cover;       /* cover the whole box */
+  background-attachment: fixed; /* parallax effect */
+  background-position: center;  /* center the image */
+  background-color: #e8f5e9;    /* fallback color if image doesn't load */
+  padding: 16px;                /* space inside the box */
+  border-radius: 8px;           /* rounded corners */
+  margin-top: 10px;             /* space above the box */
+  margin-bottom: 10px;          /* space below the box */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* subtle shadow */
+}
+
+/* Optional: Make the text a bit larger for readability */
+#bio .bio-box p {
+  font-size: 1.1em;
+  margin: 0;
+  background: rgba(255,255,255,0.8); /* add a white background behind text for readability */
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Style the skills section box */
+.skills-box {
+  background-color: #e3f2fd; /* very light blue background */
+  border-left: 5px solid #2196F3; /* blue accent bar on the left */
+  padding: 16px; /* space inside the box */
+  border-radius: 8px; /* rounded corners */
+  margin-top: 10px; /* space above the box */
+  margin-bottom: 10px; /* space below the box */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* subtle shadow */
+}
+
+/* Style the interests section box */
+.interests-box {
+  background-color: #fff3e0; /* very light orange background */
+  border-left: 5px solid #FF9800; /* orange accent bar on the left */
+  padding: 16px; /* space inside the box */
+  border-radius: 8px; /* rounded corners */
+  margin-top: 10px; /* space above the box */
+  margin-bottom: 10px; /* space below the box */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* subtle shadow */
 }
